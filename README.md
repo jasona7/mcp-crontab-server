@@ -26,6 +26,8 @@ This architecture demonstrates:
 ### Prerequisites
 
 - Python 3.7+
+- FastMCP
+- Rich
 - pip (Python package manager)
 
 ### Install Dependencies
