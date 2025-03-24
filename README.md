@@ -26,8 +26,6 @@ This architecture demonstrates:
 ### Prerequisites
 
 - Python 3.7+
-- FastMCP
-- Rich
 - pip (Python package manager)
 
 ### Install Dependencies
@@ -79,32 +77,29 @@ Once the client is running, you'll see a menu with the following options:
         └─────────────────────────────┴───────────────────────────────────────────────────────┘
 
         Available Commands:
-        1. Show recent logs
-        2. Search crontab entries
-        3. Exit
-        Enter command number [1/2/3] (1): 2
-        Enter search term: trends
-        
-        Searching for crontab entries containing 'trends'...
-        
-        Search Results:
-        0 */4 * * * cd /home/ && .env/bin/python scripts/trends/fetch_trends.py -c 
-        scripts/trends/config/usa.yaml
-        0 */6 * * * cd /home/ && .env/bin/python scripts/trends/fetch_trends.py -c 
-        scripts/trends/config/japan.yaml
-        0 2,8,14,20 * * * cd /home/ && .env/bin/python scripts/trends/fetch_trends.py -c 
-        scripts/trends/config/brazil.yaml
-        0 */8 * * * cd /home/ && .env/bin/python scripts/trends/fetch_trends.py -c 
-        scripts/trends/config/indonesia.yaml
-        0 4,12,20 * * * cd /home/ && .env/bin/python scripts/trends/fetch_trends.py -c 
-        scripts/trends/config/india.yaml
+            1. Show recent logs
+            2. Search crontab entries
+            3. Check server status
+            4. Exit
+            Enter command number [1/2/3/4] (1): 3
+            Checking server status...
+            JSON Response:
+            {
+            "status": "online",
+            "server_name": "MCP Crontab Explorer Server",
+            "version": "1.0.0",
+            "tools_available": 3,
+            "pid": 516632,
+            "timestamp": "2025-03-24T17:00:04.066705"
+            }
 
-
-        Available Commands:
-        1. Show recent logs
-        2. Search crontab entries
-        3. Exit
-        Enter command number [1/2/3] (1): 
+            Available Commands:
+            1. Show recent logs
+            2. Search crontab entries
+            3. Check server status
+            4. Exit
+            Enter command number [1/2/3/4] (1): 4
+            Exiting MCP Crontab Explorer. Goodbye!
 
 ## MCP Conformity
 
