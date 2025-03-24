@@ -122,7 +122,7 @@ def show_scheduled_task_summary():
     """Show most recent related cron log output"""
     print(f"Tool call: show_scheduled_task_summary at {datetime.datetime.now()}")
     try:
-        command = "tail -n 10 /var/log/syslog | grep scripts"
+        command = "tail -n 10 /var/log/syslog"
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
         if result.returncode == 0 and result.stdout:
             # Return structured JSON response
